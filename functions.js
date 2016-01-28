@@ -67,3 +67,31 @@ var newArray = people.map(function(num){
    return num.age*num.age;
 }); 
 
+//Create a function called operationMaker that takes only a string called 
+//operation as argument. This string could be “add”, “subtract”, “mult” or “div”. 
+//Your function will return a function that will take two numbers and return the 
+//result of running operation on these numbers.
+function operationMaker(operation) {
+    if (operation === "add") {
+        return (function adder(n,p){
+            return n+p;
+        });
+    }
+    else if (operation === "subtract") {
+        return (function subtractor(n,p) {
+            return n-p;
+        });
+    }
+    else if (operation === "mult") {
+        return (function multiply(n,p) {
+            return n*p;
+        });
+    }
+    else if (operation === "div") {
+        return (function product(n,p) {
+            return n/p;
+        });
+    }
+}
+operationMaker("div")(2,4);
+
