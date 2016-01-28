@@ -95,3 +95,4 @@ function operationMaker(operation) {
 }
 operationMaker("div")(2,4);
 
+
