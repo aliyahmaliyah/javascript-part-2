@@ -53,3 +53,17 @@ var squared= array.map(function(num) {
     return num * num;
 });
 
+//Create a function that can be used with Array.prototype.map. This function 
+//should be able to take an object and square its “num” property. Then, use this 
+//function with map on an array of objects each containing a “num” property.
+
+var people1 = [
+    {name: "aliyah", age: 29},
+    {name: "linguini", age: 2},
+    {name: "claire", age: 9},
+    {name: "cole", age: 5}
+    ];
+var newArray = people.map(function(num){
+   return num.age*num.age;
+}); 
+
