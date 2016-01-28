@@ -44,4 +44,12 @@ people.sort(function(a,b){
     }
 });
 
+//Create a function that can be used with Array.prototype.map. This function should 
+//take a number and return its square. Then, use this function with map on an array of 
+//numbers to check the result.
+
+var array = [2,4,6,8];
+var squared= array.map(function(num) {
+    return num * num;
+});
 
