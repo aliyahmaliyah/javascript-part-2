@@ -25,6 +25,6 @@ function Warrior(name,gender) {
     }
 var warrior1 = new Warrior("aliyah", "F");
 var warrior2 = new Warrior("Sonic", "M");
+var warrior3 = new Warrior("mom", "F");
 warrior1.fight(warrior2);
-warrior1.faceoff(warrior2);
-var warrior3 = new Warrior("mom", "F")
+warrior1.faceoff(warrior3);
