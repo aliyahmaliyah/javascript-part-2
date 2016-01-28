@@ -14,4 +14,34 @@ arr.sort(function(a, b){
     }
 });
 
+//Create an array of objects (don’t need to use new here, just regular object literals). 
+//These objects will contain a name and email property. Then, run some code that will 
+//sort your array by the longest name. Then, run some code that will sort your array by e-mail 
+//address in alphabetical order.
+var people = [
+    {name: "aliyah", email: "aliyah@aliyahmaliyah.com"},
+    {name: "kimberly", email: "kim@yahoo.ca"}
+    ];
+people.sort(function(a, b){
+    if (a.name.length < b.name.length) {
+        return 1;
+    }
+    else if (a.name.length > b.name.length) {
+        return -1;
+    } else {
+        return 0;
+    }
+});
+
+people.sort(function(a,b){
+    if (a.email < b.email) {
+        return -1;
+    }
+    else if (a.email > b.email) {
+        return 1;
+    } else {
+        return 0;
+    }
+});
+
 
